@@ -1,0 +1,142 @@
+.form-group label,
+.donation-frequencies input[type="radio"] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px; margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  display: none;
+}
+.newsmatch-donation-form {
+    width: 100%;
+    float: left;
+    margin-bottom:1em;
+}
+
+.donation-level-message {
+  clear: both;
+  float: left;
+
+  margin: 1em 0;
+}
+.newsmatch-donation-form button[type="submit"] {
+  float: left;
+  clear: left;
+
+  background: #17b0ea;
+  border:none;
+  font-size: 17px;
+  padding: .5em 2em;
+  color: #fff;
+  margin: 4px 0;
+}
+.newsmatch-donation-form button[type="submit"]:hover {
+  background: #118ebb;
+}
+.newsmatch-donation-form .form-group {
+  float:left;
+  max-width: 30%;
+}
+.newsmatch-donation-form .form-group::before {
+  content: '$';
+  display: inline-block;
+  width: 4%;
+}
+input.newsmatch-donation-amount.form-control {
+    min-width: 80%;
+    margin-left: 4%;
+    line-height: 2;
+}
+
+.newsmatch-donate-label {
+	margin-bottom:1em;
+}
+
+.newsmatch-donation-amount {
+  font-size: 18px;
+  max-width: 45%;
+  text-align: right;
+}
+
+.donation-frequency-group {
+	width:70%;
+	float:left;
+}
+
+.service-nm .donation-frequency-group,
+.service-nm .donation-frequencies {
+  display:none;
+}
+
+.donation-frequency {
+  padding: 5px;
+  width:30%;
+  max-width:150px;
+  background-color: #ccc;
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+  line-height: 2;
+  cursor: pointer;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+label.donation-frequency input {
+  display: none;
+}
+
+select.donation-frequencies {
+  width: 50%;
+  height:42px;
+  line-height: 2;
+  border-radius:0;
+  outline: 1px solid #ccc;
+  outline-offset: -1px;
+  border: none;
+}
+
+.donation-frequency {
+	color:#fff;
+	background-color: #999;
+}
+.donation-frequency.selected {
+  background-color: #17b0ea;
+}
+.donation-frequency:hover {
+  background-color: #118ebb;
+}
+
+@media screen and (max-width: 480px) {
+  .newsmatch-donation-amount {
+    display: inline;
+    max-width: 101px;
+  }
+
+  .donation-frequency {
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .member-benefits-link {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .newsmatch-donation-amount {
+    display: inline;
+    max-width: 85px;
+  }
+
+  .donation-frequency {
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .member-benefits-link {
+    display: block;
+  }
+}
